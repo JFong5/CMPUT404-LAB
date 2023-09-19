@@ -7,5 +7,5 @@ print(requests.__version__)
 print("Status Code:", requests.get("http://google.com/"))
 
 #Print own source code
-code = requests.get("https://github.com/JFong5/CMPUT404-LAB/blob/main/lab1.py")
+code = requests.get("https://raw.githubusercontent.com/JFong5/CMPUT404-LAB/main/lab1.py")
 print("Source Code:", code.text)
