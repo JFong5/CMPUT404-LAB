@@ -4,7 +4,8 @@ import requests
 print(requests.__version__)
 
 #get google homepage
-print("Status Code:", requests.get("http://google.com/"))
+google = requests.get("https://www.google.com/")
+print("Google Homepage:", google.text)
 
 #Print own source code
 code = requests.get("https://raw.githubusercontent.com/JFong5/CMPUT404-LAB/main/lab1.py")
